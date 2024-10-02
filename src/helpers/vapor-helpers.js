@@ -1,5 +1,5 @@
 export async function getGamesInLibrary() {
-  await delay(1200);
+  await delay(3000);
 
   return GAMES;
 }
