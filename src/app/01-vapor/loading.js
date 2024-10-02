@@ -1,21 +1,19 @@
 import React from "react";
 
 import LibraryGameCardSkeleton from "@/components/LibraryGameCardSkeleton";
+import ArticleWrapper from "@/components/ArticleWrapper";
 
 import { range } from "@/utils";
 
 function LibraryGameCardLoading() {
   return (
-    <section className="max-width-wrapper">
-      <header className="library-header">
-        <h1>My games</h1>
-      </header>
+    <ArticleWrapper title="My games">
       <div className="game-grid">
         {range(12).map((index) => (
           <LibraryGameCardSkeleton key={index} />
         ))}
       </div>
-    </section>
+    </ArticleWrapper>
   );
 }
 
